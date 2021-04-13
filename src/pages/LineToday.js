@@ -18,7 +18,7 @@ const LineToday = (props) => {
     return (
         <>
             <h1>Line Today</h1>
-            <NewsList newsList={countryList}/>
+            <NewsList newsList={newsLists}/>
         </>
     );
 }
