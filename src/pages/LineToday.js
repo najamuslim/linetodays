@@ -6,7 +6,10 @@ const LineToday = (props) => {
     const [newsLists, setNewsList] = useState();
 
     const fetchData = async () => {
-        return await fetch('https://today.line.me/id/portaljson')
+        return await fetch('https://today.line.me/id/portaljson',
+        {
+            mode: "no-cors",
+        })
             .then(response => response.json())
             .then(data => {
                 setNewsList(data)
